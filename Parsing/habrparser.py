@@ -156,12 +156,12 @@ class HabrParser:
             post = self.parse_page(post_idx, min_post_size)
         except TimeoutError:
             print("Timeout Error\n")
-            print(post_idx)
+            #print(post_idx)
             post = ()
             page_log = str(post_idx) + "\n"
         except:
             # в случае ошибок (не считая проблем с запросами, напримем 404) сохраняю индекс в лог
-            print(post_idx)
+            #print(post_idx)
             post = ()
             page_log = str(post_idx) + "\n"
         return (post, page_log)
