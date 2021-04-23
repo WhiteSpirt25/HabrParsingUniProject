@@ -18,5 +18,8 @@ ipython_config.py
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks
 
-#Ignore parsed data, but not folder
+#Ignore parsed data
 /Parsing/data/*
+
+#Ignore pycache
+/*/__pycache__
